@@ -1,4 +1,17 @@
 ComeCleanCorp::Application.routes.draw do
+
+  get "welcome/index"
+
+  get "welcome/about"
+
+  get "welcome/projects"
+
+  get "welcome/pricing"
+
+  get "welcome/contact"
+
+  root to: 'welcome#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
