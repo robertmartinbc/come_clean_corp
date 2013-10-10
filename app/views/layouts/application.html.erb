@@ -8,13 +8,18 @@
 </head>
 <body>
 	<div class="container">
-		<ul class="nav nav-tabs">
+		<div class="row">
+			<p><%= image_tag("window_wiper.jpeg", class: "img-polaroid") %></p>
+			<br>
+		<ul class="nav nav-pills">
 			<li><%= link_to "Home", root_path %></li>
 			<li><%= link_to "Projects", welcome_projects_path %></li>
 			<li><%= link_to "Pricing", welcome_pricing_path %></li>
 			<li><%= link_to "About Us", welcome_about_path %></li>
 			<li><%= link_to "Contact Us", welcome_contact_path %></li>
+			<li class="pull-right"><%= image_tag("facebook.jpeg") %></li>
 		</ul>
+	</div>
 		<%= yield %>
 	</div>
 
